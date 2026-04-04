@@ -4,17 +4,19 @@ import Link from "next/link";
 
 import { navLinks } from "@/app/constant/Navlink";
 import { usePathname } from "next/navigation";
+import { Leaf } from "lucide-react";
 
 function Navbar() {
   const pathname = usePathname();
 
   return (
     <>
-      <nav className="max-w-7xl w-full mx-auto py-6 px-4 items-center justify-center ">
+      <nav className="mx-auto w-full max-w-7xl items-center justify-center px-4 py-6">
         <div className="flex items-center justify-between space-x-2">
           <div>
-            <Link href="/">
-              <h1 className="font-bold">KELVIN</h1>
+            <Link href="/" className="flex items-center gap-2 p-4">
+              <Leaf className="text-primary ml-8" />
+              <h1 className="font-bold">Leaf Tech</h1>
             </Link>
           </div>
 
@@ -26,8 +28,8 @@ function Navbar() {
                     href={link.href}
                     className={`${
                       pathname === link.href
-                        ? "text-primary font-semibold "
-                        : " text-forground hover:text-primary/70 hover:opacity-100"
+                        ? "text-primary font-semibold"
+                        : "text-forground hover:text-primary/70 hover:opacity-100"
                     }`}
                   >
                     {link.name}
