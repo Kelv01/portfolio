@@ -1,8 +1,19 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { FiGithub } from "react-icons/fi";
 
 import Image from "next/image";
 import Link from "next/link";
 import { mySkills } from "./constant/myskills";
+import {
+  Card,
+  CardAction,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Code, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
@@ -79,7 +90,6 @@ export default function Home() {
                 </div>
               </div>
             </section>
-
             <section className="py-20">
               <div className="pb-8">
                 <h2 className="mb-4 text-2xl font-semibold">
@@ -119,6 +129,106 @@ export default function Home() {
                     </div>
                   );
                 })}
+              </div>
+            </section>
+
+            <section className="py-20">
+              <div className="pb-8">
+                <h3 className="mb-4 text-2xl font-semibold">
+                  Projects I have Built
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <Card className="relative mx-auto w-full max-w-7xl pt-0">
+                  <div className="absolute inset-0 z-30 aspect-video bg-black/3" />
+                  <Image
+                    src="/pionus.png"
+                    alt="Event cover"
+                    className="relative z-20 aspect-video w-full object-cover"
+                    width={500}
+                    height={500}
+                  />
+                  <CardHeader>
+                    <CardTitle className="mb-4">Pionus Safaris</CardTitle>
+                    <CardDescription className="mb-4">
+                      A practical talk on component APIs, accessibility, and
+                      shipping faster.
+                    </CardDescription>
+
+                    <div className="flex gap-4">
+                      <Badge variant="secondary">Next.js</Badge>
+                      <Badge variant="secondary">TypeScript</Badge>
+                      <Badge variant="secondary">Tailwindcss</Badge>
+                    </div>
+                  </CardHeader>
+
+                  <CardFooter className="bg-card gap-4 border-t-transparent">
+                    <a
+                      href="https://github.com/Kelv01/alx-project-nexus.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {" "}
+                      <FiGithub className="h-5 w-5" /> Code
+                    </a>
+                    <a
+                      href="https://alx-project-nexus-pionus-safaris.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {" "}
+                      <ExternalLink className="h-5 w-5" /> Live Demo
+                    </a>
+                  </CardFooter>
+                </Card>
+
+                <Card className="relative mx-auto w-full max-w-7xl pt-0">
+                  <div className="absolute inset-0 z-30 aspect-video bg-black/3" />
+                  <Image
+                    src="/movieverse.png"
+                    alt="Event cover"
+                    className="relative z-20 aspect-video w-full object-cover"
+                    width={500}
+                    height={500}
+                  />
+                  <CardHeader>
+                    <CardTitle className="mb-4">Pionus Safaris</CardTitle>
+                    <CardDescription className="mb-4">
+                      A practical talk on component APIs, accessibility, and
+                      shipping faster.
+                    </CardDescription>
+
+                    <div className="flex gap-4">
+                      <Badge variant="secondary">Next.js</Badge>
+                      <Badge variant="secondary">TypeScript</Badge>
+                      <Badge variant="secondary">Tailwindcss</Badge>
+                    </div>
+                  </CardHeader>
+
+                  <CardFooter className="bg-card gap-4 border-t-transparent">
+                    <a
+                      href="https://github.com/Kelv01/movie-verse.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {" "}
+                      <FiGithub className="h-5 w-5" /> Code
+                    </a>
+                    <a
+                      href="https://movie-verse-tau-gray.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {" "}
+                      <ExternalLink className="h-5 w-5" /> Live Demo
+                    </a>
+                  </CardFooter>
+                </Card>
               </div>
             </section>
           </section>
