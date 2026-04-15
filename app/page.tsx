@@ -7,7 +7,6 @@ import Link from "next/link";
 import { mySkills } from "./constant/myskills";
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -152,8 +151,12 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle className="mb-4">Pionus Safaris</CardTitle>
                     <CardDescription className="mb-4">
-                      A practical talk on component APIs, accessibility, and
-                      shipping faster.
+                      A modern frontend web platform for discovering,
+                      organizing, and preparing safari tour bookings in East
+                      Africa. Built with Next.js (Pages Router) and TypeScript,
+                      this project focuses on scalable UI architecture, strong
+                      typing, and clean separation of concerns while remaining
+                      fully backend-ready.
                     </CardDescription>
 
                     <div className="flex gap-4">
@@ -197,8 +200,11 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle className="mb-4">Pionus Safaris</CardTitle>
                     <CardDescription className="mb-4">
-                      A practical talk on component APIs, accessibility, and
-                      shipping faster.
+                      MovieVerse is a modern React application for discovering
+                      movies, exploring genres, and reading reviews. It uses the
+                      TMDb API to provide up-to-date movie data and trending
+                      titles. Built with Vite, Tailwind CSS, Zustand, and React
+                      Router.
                     </CardDescription>
 
                     <div className="flex gap-4">
@@ -229,6 +235,38 @@ export default function Home() {
                     </a>
                   </CardFooter>
                 </Card>
+              </div>
+            </section>
+
+            <section className="py-20">
+              <div className="mx-auto w-full max-w-7xl">
+                <div className="mb-6 text-center leading-relaxed text-pretty">
+                  <h2 className="text-2xl font-bold">Experience & Growth</h2>
+                </div>
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                  <div className="p-4 leading-relaxed text-pretty">
+                    <Card className="border-l-sidebar-accent cursor-pointer border transition-all duration-600 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                      <CardHeader>
+                        <CardTitle className="pb-4">Current Focus</CardTitle>
+                        <CardDescription>
+                          Transitioning into Backend & AI integration building
+                          APis and exploring intelligent aplications
+                        </CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </div>
+                  <div className="p-4 leading-relaxed text-pretty">
+                    <Card className="border-r-sidebar-accent cursor-pointer border transition-all duration-600 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                      <CardHeader>
+                        <CardTitle className="pb-4">Core Strength</CardTitle>
+                        <CardDescription>
+                          Frontend development with React, Next.js & modern
+                          UI/UX best practices
+                        </CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </div>
+                </div>
               </div>
             </section>
           </section>
