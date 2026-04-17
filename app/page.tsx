@@ -272,7 +272,7 @@ export default function Home() {
                     </CardHeader>
                   </Card>
                 </div>
-                <div className="leading-relaxed text-pretty">
+                <div className="flex p-4 leading-relaxed text-pretty">
                   <Card className="border-r-sidebar-accent h-full w-96 cursor-pointer border transition-all duration-600 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
                     <CardHeader>
                       <CardTitle className="pb-4">Core Strength</CardTitle>
